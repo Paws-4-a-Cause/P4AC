@@ -13,3 +13,59 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+#navbarcontainer {
+  display: flex;
+  justify-content: right;
+  font-weight: 600;
+  font-size: larger;
+  padding: 1rem;
+}
+
+#navbarlet {
+  padding: 1rem;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+#homedescription {
+  text-align: left
+}
+
+
+#layout {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#highlighttext {
+  font-weight: 600;
+  color: #009bf591;
+}
+
+#celllist{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#cell {
+  padding: 1rem;
+}
