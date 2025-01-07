@@ -1,4 +1,3 @@
-import React from "react";
 import image from "../assets/p4ac.png";
 import Organisation from "./Organisation";
 const HomePage = () => {

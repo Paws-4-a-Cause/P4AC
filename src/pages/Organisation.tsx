@@ -1,4 +1,3 @@
-import React from 'react';
 import CellList from '../components/CellList';
 
 const Organisation = () => {
