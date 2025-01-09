@@ -5,5 +5,5 @@ import tsconfigPaths from "vite-tsconfig-paths"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tsconfigPaths()],
-  base: '/P4AC/', // Replace with your actual repository name
+  base: '/P4AC', // Replace with your actual repository name
 })

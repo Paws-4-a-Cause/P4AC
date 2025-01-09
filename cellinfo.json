@@ -1,22 +1,30 @@
 {
     "cells": [
         {
-    "cellname": "Web Dev",
-    "cellinfo": "Assisting organisations with designing and hosting websites"
-    },
-    {
-    "cellname": "Media",
-    "cellinfo": "Enabling greater reach and engagement through social media"
-    },
-    {
-    "cellname": "Design",
-    "cellinfo": "Creating visually appealing content for organisations"
-    },
-    {
-    "cellname": "Volunteers",
-    "cellinfo": "The backbone of our cause"
-    }
-]
-
+            "cellname": "Web Dev",
+            "cellinfo": "Assisting organisations with designing and hosting websites"
+        },
+        {
+            "cellname": "Media",
+            "cellinfo": "Enabling greater reach and engagement through social media"
+        },
+        {
+            "cellname": "Design",
+            "cellinfo": "Creating visually appealing content for organisations"
+        },
+        {
+            "cellname": "Volunteers",
+            "cellinfo": "The backbone of our cause, offering their time and hardwork to help non-profits"
+        }
+    ],
+    "aboutus": [
+        {
+            "aboutusname": "Our Mission",
+            "aboutusinfo": "To provide digital solutions to non-profit organisations"
+        },
+        {
+            "aboutusname": "Our Vision",
+            "aboutusinfo": "To create a world where non-profits can focus on their cause, not their technology"
+        }
+    ]
 }
-

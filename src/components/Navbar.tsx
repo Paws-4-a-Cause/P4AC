@@ -1,15 +1,34 @@
-import { Link } from "react-router-dom";
+import { Box, Flex, Link as ChakraLink, Image } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import image from "../assets/react.svg";
 
 const Navbar = () => {
   return (
-    <div id="navbar">
-      <img src={image}></img>
-      <div id="navbarcontainer">
-        <Link id = "navbarlet" to="/">Home</Link>
-        <Link id = "navbarlet" to="/about">About</Link>
-      </div>
-    </div>
+    <Box p={4} id="navbar">
+      <Flex justify="space-between" align="center" maxW="1200px" mx="auto">
+        <Image src={image} alt="React Logo" boxSize="40px" />
+        <Flex gap={6} id="navbarcontainer" justify="flex-end" align="center">
+          <ChakraLink
+            as={RouterLink}
+            to="/P4AC"
+            fontWeight="bold"
+            _hover={{ textDecoration: "underline" }}
+            id="navbarlet"
+          >
+            Home
+          </ChakraLink>
+          <ChakraLink
+            as={RouterLink}
+            to="/about"
+            fontWeight="bold"
+            _hover={{ textDecoration: "underline" }}
+            id="navbarlet"
+          >
+            About
+          </ChakraLink>
+        </Flex>
+      </Flex>
+    </Box>
   );
 };
 

@@ -7,7 +7,9 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ cellname, cellinfo })  => {
     return (
-        <Card>
+        <Card
+        width="100%"
+        >
             <CardHeader>
                 <Heading>{cellname}</Heading>
             </CardHeader>
