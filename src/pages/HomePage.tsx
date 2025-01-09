@@ -1,5 +1,6 @@
+import Partners from "@/components/Partners";
 import image from "../assets/p4ac.png";
-import Organisation from "./Organisation";
+import Organisation from "../components/Organisation";
 import { Heading } from "@chakra-ui/react";
 
 
@@ -21,6 +22,7 @@ const HomePage = () => {
         <img src={image} style={{ width: "400px" }} />
       </div>
       <Organisation />
+      <Partners />
     </>
   );
 };

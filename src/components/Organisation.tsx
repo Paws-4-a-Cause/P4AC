@@ -1,5 +1,5 @@
 import { Heading } from '@chakra-ui/react';
-import CellList from '../components/CellList';
+import CellList from './CellList';
 
 const Organisation = () => {
     return (

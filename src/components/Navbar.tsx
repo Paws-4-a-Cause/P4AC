@@ -13,7 +13,7 @@ const Navbar = () => {
             to="/P4AC"
             fontWeight="bold"
             _hover={{ textDecoration: "underline" }}
-            id="navbarlet"
+            fontSize={["md", "lg", "xl"]}
           >
             Home
           </ChakraLink>
@@ -22,7 +22,7 @@ const Navbar = () => {
             to="/about"
             fontWeight="bold"
             _hover={{ textDecoration: "underline" }}
-            id="navbarlet"
+            fontSize={["md", "lg", "xl"]}
           >
             About
           </ChakraLink>
