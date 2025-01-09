@@ -12,19 +12,3 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-#home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
-}
-
-#homedescription {
-  text-align: left
-}
-#highlighttext {
-  font-weight: 600;
-  color: #009bf591;
-}
