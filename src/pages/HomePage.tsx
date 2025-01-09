@@ -47,7 +47,7 @@ const HomePage = () => {
 
           <Image
             src={image}
-            maxW={{ base: "100%", md: "400px" }}
+            maxW={{ base: "100%", md: "300px" }}
           />
         </Flex>
       </Box>
