@@ -1,28 +1,17 @@
+import file from "../../cellinfo.json" with { type: "json" }
+import Cell from "./Cell";
+const LST = file.cells;
 
-
-const LST = [
-    {
-        name: "Web Dev",
-        description: "Description 1"
-    },
-    {
-        name: "Media",
-        description: "Description 2"
-    },
-    {
-        name: "Design",
-        description: "Description 3"
-    }
-]
 const CellList = () => {
     return (
         <div id = "celllist">
-            {LST.map((cell) => {
+            {LST.map((cell, index) => {
                 return (
-                    <div id = "cell">
-                        <h2>{cell.name}</h2>
-                        <p>{cell.description}</p>
-                    </div>
+                    <Cell 
+                    key = {index}
+                    cellname = {cell.cellname}
+                    cellinfo = {cell.cellinfo}
+                    />
                 )
             })}
 
