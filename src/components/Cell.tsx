@@ -1,3 +1,5 @@
+import { Card, CardBody, CardHeader, Heading} from "@chakra-ui/react"
+
 interface CellProps {
     cellname: string;  // Ensure it's always a string
     cellinfo: string;  // Ensure it's always a string
@@ -5,10 +7,14 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ cellname, cellinfo })  => {
     return (
-        <div className="cell">
-            <h3>{cellname}</h3>
-            <p>{cellinfo}</p>
-        </div>
+        <Card>
+            <CardHeader>
+                <Heading>{cellname}</Heading>
+            </CardHeader>
+            <CardBody>
+                <p>{cellinfo}</p>
+            </CardBody>
+        </Card>
     );
 }
 
