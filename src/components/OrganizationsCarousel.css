@@ -1,0 +1,27 @@
+/* src/components/OrganizationsCarousel.css */
+
+.organizations-carousel-container {
+  overflow-x: scroll; /* Force horizontal scrolling */
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem;
+  /* Optional: add a subtle border to the container to visualize its bounds */
+  border: 1px solid #ddd;
+}
+
+/* Scrollbar styling for Webkit browsers */
+.organizations-carousel-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.organizations-carousel-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.organizations-carousel-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.organizations-carousel-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

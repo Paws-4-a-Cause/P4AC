@@ -1,7 +1,9 @@
-import Partners from "@/components/Partners";
-import image from "../assets/p4ac.png";
-import Organisation from "../components/Organisation";
-import { Box, Heading, Flex, Image, Text } from "@chakra-ui/react";
+// src/pages/HomePage.tsx
+import Partners from "@/components/Partners"
+import image from "../assets/p4ac.png"
+import Organisation from "../components/Organisation"
+import OrganizationsCarousel from "@/components/OrganizationsCarousel"
+import { Box, Heading, Flex, Image, Text } from "@chakra-ui/react"
 
 const HomePage = () => {
   return (
@@ -19,11 +21,7 @@ const HomePage = () => {
             w={{ base: "100%", md: "60%", lg: "40%" }}
             textAlign="left"
           >
-            <Heading
-              as="h1"
-              size={{ base: "xl", md: "2xl", lg: "3xl" }}
-              pb="4"
-            >
+            <Heading as="h1" size={{ base: "xl", md: "2xl", lg: "3xl" }} pb="4">
               Paws for a Cause
             </Heading>
             <Text
@@ -45,17 +43,18 @@ const HomePage = () => {
             </Text>
           </Box>
 
-          <Image
-            src={image}
-            maxW={{ base: "100%", md: "300px" }}
-          />
+          <Image src={image} maxW={{ base: "100%", md: "300px" }} />
         </Flex>
       </Box>
 
       <Organisation />
+
+      {/* Insert the OrganizationsCarousel component */}
+
       <Partners />
+      <OrganizationsCarousel />
     </>
   );
-};
+}
 
-export default HomePage;
+export default HomePage
