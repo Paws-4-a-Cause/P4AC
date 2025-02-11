@@ -1,6 +1,7 @@
-import { Box, Heading, Flex, Image, Text, VStack } from "@chakra-ui/react";
-import image1 from "../assets/p4ac.png";
-import image2 from "../assets/p4ac.png";
+import { Box, Heading, Flex, Image, Text, VStack, Link, HStack } from "@chakra-ui/react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import image1 from "../assets/aboutpage_pic1.jpg";
+import image2 from "../assets/aboutpage_pic2.jpeg";
 
 const AboutPage = () => {
   return (
@@ -28,7 +29,7 @@ const AboutPage = () => {
             To provide digital solutions to non-profit organisations.
           </Text>
         </Box>
-        <Image src={image1} alt="Our Mission" maxW={{ base: "100%", md: "300px" }} />
+        <Image src={image1} alt="Our Mission" maxW={{ base: "100%", md: "500px" }} />
       </Flex>
 
       <Flex
@@ -51,6 +52,21 @@ const AboutPage = () => {
           </Text>
         </Box>
       </Flex>
+
+      {/* Social Media Links */}
+      <VStack spacing={6} mt={10}>
+        <Text fontSize={{ base: "md", md: "lg", lg: "xl" }} fontWeight="bold">
+          Follow us on
+        </Text>
+        <HStack spacing={10}>
+          <Link href="https://www.instagram.com/rc4paws?igsh=MWd4ZHdqZ29taHJheA==" isExternal>
+            <FaInstagram size={50} />
+          </Link>
+          <Link href="https://www.linkedin.com/company/rc4-paws-4-a-cause/" isExternal>
+            <FaLinkedin size={50} />
+          </Link>
+        </HStack>
+      </VStack>
     </Box>
   );
 };
