@@ -53,7 +53,6 @@ const OrganizationsCarousel = () => {
               <CardHeader>
                 <CardTitle>{org.title}</CardTitle>
               </CardHeader>
-              <div className="text-3xl text-green-500">Hello, Tailwind!</div>
               <CardContent>
                 <p>{org.description}</p>
               </CardContent>
