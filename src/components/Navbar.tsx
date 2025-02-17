@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <Box p={4} id="navbar">
       <Flex justify="space-between" align="center" maxW="1200px" mx="auto">
+        <ChakraLink as={RouterLink} to="/P4AC" _hover={{ textDecoration: "none" }}>
           <Image src={image} alt="React Logo" boxSize="40px" />
+        </ChakraLink>
         <Flex gap={6} id="navbarcontainer" justify="flex-end" align="center">
           <ChakraLink
             as={RouterLink}
