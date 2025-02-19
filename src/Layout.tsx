@@ -8,9 +8,9 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div id="layout" style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    <div id="layout" style={{ display: "flex", flexDirection: "column", minHeight: "100vh", width: "100%" }}>
       <Navbar />
-      <main style={{ flex: 1 }}>{children}</main>
+      <main style={{ flex: 1, width: "100%" }}>{children}</main>
       <Footer /> {/* Add Footer here */}
     </div>
   );
