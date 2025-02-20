@@ -7,11 +7,10 @@ const Footer: React.FC = () => {
       color: "white",
       textAlign: "center",
       padding: "10px 0",
-      width: "124.98%",
-      position: "relative", // Required for transform
-      left: "50%",
-      boxSizing: "border-box",
-      transform: "translateX(-50%)", 
+      width: "100%",
+      position: "relative",
+      bottom: "0",  
+
     }}>
       <p>&copy; {new Date().getFullYear()} Paws 4 a cause. All rights reserved.</p>
       <p>
