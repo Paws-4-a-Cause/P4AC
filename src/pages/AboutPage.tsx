@@ -18,15 +18,22 @@ const AboutPage = () => {
         direction={{ base: "column", md: "row" }}
         gap={8}
         w="100%"
-        mt={8}
+        mt={100}
       >
         {/* Mission Section */}
         <Box w={{ base: "100%", md: "45%" }} textAlign="left">
-          <Heading as="h2" size={{ base: "lg", md: "xl" }} pb={2}>
-            Our Mission
+          <Heading as="h2" size={{ base: "lg", md: "xl" }} pb={2} color="#2f5eb7">
+            Our Mission:
           </Heading>
-          <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} lineHeight="1.6">
+          <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} pb={2}>
             To provide digital solutions to non-profit organisations.
+          </Text>
+          <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} lineHeight="1.6">
+            We are dedicated to empowering non-profit organisations with digital solutions that enhance their 
+            efficiency and impact. By leveraging our expertise in technology, we help welfare organisations 
+            overcome operational challenges, streamline processes, and improve outreach. Our primary focus is 
+            on animal welfare groups, where we combine our passion for helping animals with innovative tools 
+            that support shelters in meaningful ways.
           </Text>
         </Box>
         <Image src={image1} alt="Our Mission" maxW={{ base: "100%", md: "500px" }} />
@@ -38,17 +45,24 @@ const AboutPage = () => {
         direction={{ base: "column-reverse", md: "row" }}
         gap={8}
         w="100%"
-        mt={8}
+        mt={100}
       >
         <Image src={image2} alt="Our Vision" maxW={{ base: "100%", md: "300px" }} />
         
         {/* Vision Section */}
         <Box w={{ base: "100%", md: "45%" }} textAlign="left">
-          <Heading as="h2" size={{ base: "lg", md: "xl" }} pb={2}>
-            Our Vision
+          <Heading as="h2" size={{ base: "lg", md: "xl" }} pb={2} color="#2f5eb7">
+            Our Vision:
           </Heading>
-          <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} lineHeight="1.6">
+          <Text fontWeight="bold" fontSize={{ base: "md", md: "lg" }} pb={2}>
             To create a world where non-profits can focus on their cause, not their technology.
+          </Text>
+          <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} lineHeight="1.6">
+            We envision a world where non-profits can fully focus on their cause, rather than struggling with 
+            technological limitations. Many welfare organisations, particularly animal shelters, face resource 
+            constraints that hinder their ability to provide care and support. Our goal is to bridge this gap by 
+            offering tailored digital solutions that improve fundraising, volunteer coordination, and operational 
+            management, ensuring these organisations can maximise their impact without worrying about technology.
           </Text>
         </Box>
       </Flex>
