@@ -19,6 +19,15 @@ const Navbar = () => {
           >
             About
           </ChakraLink>
+          <ChakraLink
+            as={RouterLink}
+            to="/contactus"
+            fontWeight="bold"
+            _hover={{ textDecoration: "underline" }}
+            fontSize={["md", "lg", "xl"]}
+          >
+            Contact Us
+          </ChakraLink>
         </Flex>
       </Flex>
     </Box>
