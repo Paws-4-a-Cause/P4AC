@@ -1,9 +1,10 @@
-// src/pages/HomePage.tsx
 import Partners from "@/components/Partners"
 import image from "../assets/p4ac.png"
 import Organisation from "../components/Organisation"
 import OrganizationsCarousel from "@/components/OrganizationsCarousel"
-import { Box, Heading, Flex, Image, Text } from "@chakra-ui/react"
+import { Box, Heading, Flex, Image, Text, Button, Divider } from "@chakra-ui/react"
+import { Link as RouterLink } from "react-router-dom"
+import { Link } from "@chakra-ui/react"
 
 const HomePage = () => {
   return (
@@ -41,6 +42,16 @@ const HomePage = () => {
               student-led initiative to empower meaningful contributions to
               animal shelters.
             </Text>
+            <Box mt={4}>
+              <Link as={RouterLink} to="/events">
+                <Button
+                  colorScheme="blue"
+                  size="md"
+                >
+                  View Events
+                </Button>
+              </Link>
+            </Box>
           </Box>
 
           <Image src={image} maxW={{ base: "100%", md: "300px" }} />
@@ -48,11 +59,17 @@ const HomePage = () => {
       </Box>
 
       <Organisation />
-
-      {/* Insert the OrganizationsCarousel component */}
-
+      
+      <Divider my={10} />
+      
+      {/* Partner Organizations Carousel */}
+      <Box py={8}>
+        <OrganizationsCarousel />
+      </Box>
+      
+      <Divider my={10} />
+      
       <Partners />
-      <OrganizationsCarousel />
     </>
   );
 }
