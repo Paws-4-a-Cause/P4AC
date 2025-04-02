@@ -1,3 +1,4 @@
+
 import { Box, Heading, Flex, Image, Text, VStack, Link, HStack } from "@chakra-ui/react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import image1 from "../assets/aboutpage_pic1.jpg";
